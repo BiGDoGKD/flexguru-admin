@@ -1,0 +1,134 @@
+.gig-table-container {
+  display: flex;
+  flex-direction: row;
+  margin: 2rem 1rem;
+}
+
+.table-container {
+  width: 80%;
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+  max-height: 75vh;
+  overflow-y: auto;
+
+  & .table {
+    width: 100%;
+    border: 1;
+
+    padding: 1.5rem;
+  }
+
+  & th {
+    text-align: left;
+    padding-bottom: 1rem;
+  }
+
+  & td {
+    padding: 0.5rem;
+    border-bottom: 1px solid #ececec;
+    vertical-align: top;
+  }
+  & .td-description {
+    padding: 0.5rem;
+    border-bottom: 1px solid #ececec;
+    max-width: 400px;
+  }
+
+  & .table-data-gig {
+    display: flex;
+  }
+
+  & .table-data-gig-text {
+    margin-left: 1rem;
+  }
+  & .table-data-gig-text p {
+    font-weight: bold;
+  }
+
+  & .avatar-img {
+    width: 3rem;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.1);
+  }
+}
+.status {
+  font-weight: 600;
+  border-radius: 0.25rem;
+  padding: 0.15rem 0.5rem;
+  &-active {
+    background-color: #00ff006d;
+    color: #129101;
+  }
+  &-inactive {
+    background-color: #ff00006d;
+    color: #b10000;
+  }
+  &-pending {
+    background-color: #ffd90052;
+    color: #b37400;
+  }
+}
+.action {
+  border: 0;
+  margin: 0rem 0.25rem 0 0;
+  border-radius: 0.25rem;
+  padding: 0.5rem;
+  min-width: 1rem;
+  min-width: 1rem;
+  font-weight: 700;
+  &-accept {
+    background-color: #00ff006d;
+    color: #129101;
+  }
+  &-reject {
+    background-color: #ff00006d;
+
+    color: #b10000;
+  }
+}
+
+.gig-filter-container {
+  width: 25%;
+
+  margin: 0 0 0 1rem;
+}
+.gig-filter {
+  background-color: #ffffff;
+
+  border-radius: 0.5rem;
+}
+
+.filter-button-wrapper {
+  display: flex;
+  gap: 0.5rem;
+  padding-top: 0.25rem;
+  margin-bottom: 1rem;
+}
+.filter {
+  border: 0;
+  margin: 0rem;
+  padding: 0.35rem 0.5rem;
+  &-active {
+    border: 4px solid currentColor;
+  }
+}
+
+.gig-filter {
+  padding: 1.5rem 0 0 1.5rem;
+
+  &-item {
+    padding: 1rem 0;
+  }
+}
+
+.gig-pie-chart {
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+  padding: 1rem 1rem 2rem 1rem;
+}
+
+.font-weight-600 {
+  font-weight: 600;
+}

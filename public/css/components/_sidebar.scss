@@ -1,0 +1,105 @@
+.outer-container {
+  width: 100%;
+}
+
+.sidebar-wrapper {
+  z-index: 2;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  transition: all 0.3s ease-in-out;
+}
+
+.sidebar {
+  position: relative;
+  background-color: #ffffff;
+  height: 100%;
+  min-width: 20rem;
+  transition: all 0.3s ease-in-out;
+
+  &-close {
+    box-shadow: none;
+    transform: translateX(-100%);
+
+    &-button {
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translatex(100%);
+      border: none;
+      background-color: #475569;
+      padding: 1rem 0.1rem;
+      transition: all 0.3s ease-in-out;
+      border-top-right-radius: 0.25rem;
+      border-bottom-right-radius: 0.25rem;
+
+      &:hover {
+        background-color: #2f3446;
+        width: 1rem;
+      }
+    }
+  }
+
+  &-brand {
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    text-align: center;
+  }
+
+  &-links {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
+  &-link {
+    display: flex;
+    position: relative;
+    background-color: #cbd5e1;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    padding-left: 1.25rem;
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
+    transition-property: all;
+    transition-duration: 300ms;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    font-weight: 600;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 0.375rem;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #9ba4af;
+      transform: translateY('-0.25rem');
+      box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+        0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    }
+
+    &-active {
+      background-color: #64748b;
+      pointer-events: none;
+      color: #e8e8e8;
+      // box-shadow: 0 0 10px 1px #81878f;
+    }
+    &-attension {
+      position: absolute;
+      right: 1.25rem;
+      padding: 0.375rem;
+      background-color: #6710f27c;
+      font-size: 0.75rem;
+      line-height: 1rem;
+      border-radius: 9999px;
+    }
+
+    &-title {
+      padding-left: 1.25rem;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+  }
+}

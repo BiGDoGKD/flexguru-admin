@@ -1,0 +1,14 @@
+.chart-container {
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.chart {
+  background-color: #ffffff;
+  border-radius: 0.75rem;
+  width: 50%;
+  height: auto;
+  padding: 2rem;
+}

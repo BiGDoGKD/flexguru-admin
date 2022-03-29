@@ -1,0 +1,84 @@
+@include xs {
+  .dashboard-tile {
+    border: 1px solid #cc1b1b;
+    padding: 1.5rem;
+    border-radius: 5px;
+    header {
+      h1 {
+        font-size: 1.5em;
+        margin: 0;
+        color: $primary;
+      }
+    }
+    .body {
+      h2 {
+        font-size: 1.2em;
+        margin: 0;
+        color: $black;
+      }
+    }
+    footer {
+      p {
+        font-size: 1em;
+        margin: 0;
+        color: $gray;
+      }
+    }
+  }
+}
+@include md {
+  .dashboard-tile {
+    border: 1px solid #1aa739;
+    padding: 1.5rem;
+    border-radius: 5px;
+    header {
+      h1 {
+        font-size: 1.5em;
+        margin: 0;
+        color: $primary;
+      }
+    }
+    .body {
+      h2 {
+        font-size: 1.2em;
+        margin: 0;
+        color: $black;
+      }
+    }
+    footer {
+      p {
+        font-size: 1em;
+        margin: 0;
+        color: $gray;
+      }
+    }
+  }
+}
+@include lg {
+  .dashboard-tile {
+    border: 1px solid #581992;
+    padding: 1.5rem;
+    border-radius: 5px;
+    header {
+      h1 {
+        font-size: 1.5em;
+        margin: 0;
+        color: $primary;
+      }
+    }
+    .body {
+      h2 {
+        font-size: 1.2em;
+        margin: 0;
+        color: $black;
+      }
+    }
+    footer {
+      p {
+        font-size: 1em;
+        margin: 0;
+        color: $gray;
+      }
+    }
+  }
+}

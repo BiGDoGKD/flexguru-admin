@@ -1,0 +1,14 @@
+.admin-container {
+  background-color: #e2e8f0;
+  transition: all 0.3s ease-in-out;
+  overflow-y: auto;
+}
+
+@include lg {
+  .admin-container {
+    padding-left: 0rem;
+    &-sidebar-open {
+      padding-left: 20rem;
+    }
+  }
+}
